@@ -109,6 +109,16 @@ source scripts/setup.sh
 
 There are many interactive demos available in the original OSCBF repo! Give these a try and make sure that things work before trying to run the ROS2 nodes.
 
+Nero 的红点遥控、绿色工作空间、蓝球避障与自动姿态恢复演示由同级源码仓库的 `dynamic_motion` 启动。从本工作区目录进入源码目录运行。
+
+```bash
+cd ../oscbf-for-Agilex-Nero
+conda activate oscbf
+python -m oscbf.examples.dynamic_motion --robot nero --target manual --control_method torque
+```
+
+操作坐标、包络模型、边界参数和验证命令见手动仿真说明。[Nero 手动仿真说明](../oscbf-for-Agilex-Nero/README.md#agilex-nero-七轴法兰版)
+
 ## ROS Demo
 
 For a ROS2 end-effector trajectory tracking demo in sim,
